@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ee8b72;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ee8b72;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(251, 213, 202);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#intro, #draw {
+  text-align: center;
+}
+
+#bambooContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  height: 300px;
+}
+
+#bamboo {
+  width: 180px;
+  height: auto;
+}
+
+#stick {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  animation: shake 1s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+@keyframes drop {
+  0% { top: 0; opacity: 1; }
+  50% { top: -150px; opacity: 1; }
+  100% { top: 150px; opacity: 0; }
+}
+
+button {
+  background-color: #e97659;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f9dbc4;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #ee8b72;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

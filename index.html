@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸运签</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>幸运签</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>幸运抽签</h2>
+            <p>欢迎来到幸运签，通过简单的抽签仪式，获取对未来的指引和建议。</p>
+            <button id="startButton">开始抽签</button>
+        </section>
+        <section id="draw" style="display: none;">
+            <div id="bambooContainer">
+                <img src="lucky.gif" alt="竹签筒" id="bamboo">
+                <img src="lstick.png" alt="竹签" id="stick" style="display: none;">
+                <button id="drawButton">抽签</button>
+            </div>
+            <div id="result" style="display: none;">
+                <h3>您的抽签结果是：</h3>
+                <p id="resultText"></p>
+                <p id="resultExplanation"></p>
+                <button id="saveButton">保存结果</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 幸运签</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
